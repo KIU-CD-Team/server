@@ -21,7 +21,7 @@ db.connect((err) => {
 });
 
 app.get('/api/data', (req, res) => {
-  const query = 'SELECT * FROM stiens';
+  const query = 'SELECT * FROM cat';//cat을 자신의 테이블명으로 바꾸기
   db.query(query, (err, results) => {
     if (err) {
       console.error('쿼리 에러:', err);
